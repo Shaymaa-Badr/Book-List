@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css"
+   
+  />   <link rel="stylesheet" href="style.css">
+    <style>
+      .success,
+.error {
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  margin: 5px 0 15px 0;
+  font-weight: bold;
+}
+.success {
+  background: rgb(138, 197, 138);
+}
+.error {
+  background: rgb(202, 131, 131);
+}
+    </style>
+    <title>Book List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-primary">Add Book</h1>
+      <form id="book-form">
+        <div>
+          <label for="title" class="text-primary">Title</label>
+          <input type="text" id="title" class="u-full-width">
+        </div>
+        <div>
+            <label for="author" class="text-primary">Author</label>
+            <input type="text" id="author" class="u-full-width">
+          </div>
+          <div>
+            <label for="isbn" class="text-primary">ISBN</label>
+            <input type="text" id="isbn" class="u-full-width">
+          </div>
+          <input type="submit" value="Submit" class="u-full-width button-primary" >
+      </form>
+      <table class="u-full-width">
+          <thead>
+              <tr>
+                  <th class="text-primary">Title</th>
+                  <th class="text-primary">Author</th>
+                  <th class="text-primary">ISBN</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody id="book-list"></tbody>
+      </table>  
+    <!-- <script src="app.js"></script>  -->
+    <script src="appes6.js"></script>
+  </body>
+</html>
